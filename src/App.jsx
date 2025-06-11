@@ -120,6 +120,7 @@ function App() {
         </p>
       </header>
       <main>
+        {error && <Error title="Whoopsie!!" message={error.message} />}
         <Places
           title="I'd like to visit ..."
           isLoading={isFetching}

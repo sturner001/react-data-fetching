@@ -13,7 +13,7 @@ export async function fetchUserPlaces() {
     const resData = await response.json();
 
     if (!response.ok) {
-        throw new Error('Failed to fetch places');
+        throw new Error('Failed to fetch user places');
     }
     return resData.places;
 }
