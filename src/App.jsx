@@ -18,8 +18,6 @@ function App() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [errorUpdatingPlaces, setErrorUpdatingPlaces] = useState();
 
-
-
   useEffect(() => {
     async function fetchPlaces() {
       setIsFetching(true);
